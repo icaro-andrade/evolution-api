@@ -9,9 +9,10 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_CONNECTION_URI")
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // Nome correto da variável no Railway
 }
+
 
 enum InstanceConnectionStatus {
   open
