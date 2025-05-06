@@ -1,5 +1,9 @@
+# .dockerignore
+
+# Mantém o que já tem
 .git
-*Dockerfile*
-*docker-compose*
 node_modules
 dist
+
+# Mas **garante que a pasta prisma seja incluída**
+!prisma/
